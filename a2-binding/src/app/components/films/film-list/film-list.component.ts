@@ -8,21 +8,21 @@ import { Component } from '@angular/core';
 })
 export class FilmListComponent {
   films: Array<Film> = filmsMock;
-  filmToCreate: Film = new Film();
-  posterPreview: string = '';
-  searchField: string = 'title';
+  // filmToCreate: Film = new Film();
+  // posterPreview: string = '';
+  // searchField: string = 'title';
 
-  onClickDeleteFilm(title: string): void {
-    this.films = this.films.filter(f => f.title !== title);
+  // onClickDeleteFilm(title: string): void {
+  //   this.films = this.films.filter(f => f.title !== title);
+  // }
+
+  // ocClickCreateFilm(): void {
+  //   this.films.push(this.filmToCreate);
+  //   this.filmToCreate = new Film();
+  // }
+
+  // onChangePosterInput(poster: string): void {
+  //   this.posterPreview = poster;
   }
 
-  ocClickCreateFilm(): void {
-    this.films.push(this.filmToCreate);
-    this.filmToCreate = new Film();
-  }
 
-  onChangePosterInput(poster: string): void {
-    this.posterPreview = poster;
-  }
-
-}
