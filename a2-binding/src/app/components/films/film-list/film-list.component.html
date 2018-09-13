@@ -21,6 +21,7 @@
   <div class="row">
     <div class="card-group">
       <app-film-item
+        (deleteFilm)="onClickDeleteFilm($event)"
         [film]="film"
         *ngFor="let film of films | filmFinder:searchPattern:searchField">
       </app-film-item>

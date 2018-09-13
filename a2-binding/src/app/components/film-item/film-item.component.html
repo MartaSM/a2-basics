@@ -4,6 +4,8 @@
     <h5 class="card-title">{{ film.title | uppercase }}</h5>
     <p class="card-text"><small>{{ film.releaseDate }}</small></p>
     <p class="card-text">{{ film.summary }}</p>
-    <button class="btn btn-danger btn-block" [disabled]="film.title === 'La monja'" (click)="onClickDeleteFilm(film.title)">Delete</button>
+    <button class="btn btn-danger btn-block"
+      [disabled]="film.title === 'La monja'"
+      (click)="onClickDeleteFilm()">Delete</button>
   </div>
 </div>

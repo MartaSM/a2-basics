@@ -1,5 +1,5 @@
 import { Film } from './../../shared/models/film.model';
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-film-item',
@@ -8,4 +8,9 @@ import { Component, Input } from '@angular/core';
 })
 export class FilmItemComponent {
   @Input() private film : Film;
+  @Output() private deleteFilm: EventEmitter<Film> = new EventEmitter<Film>();
+
+  onClickDeleteFilm() {
+    this.deleteFilm.emit(this.film)
+  }
 }

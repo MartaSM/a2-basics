@@ -12,9 +12,9 @@ export class FilmListComponent {
   // posterPreview: string = '';
   // searchField: string = 'title';
 
-  // onClickDeleteFilm(title: string): void {
-  //   this.films = this.films.filter(f => f.title !== title);
-  // }
+  onClickDeleteFilm(film : Film): void {
+    this.films = this.films.filter(f => f !== film);
+  }
 
   // ocClickCreateFilm(): void {
   //   this.films.push(this.filmToCreate);
