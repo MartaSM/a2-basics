@@ -16,13 +16,10 @@ export class FilmListComponent {
     this.films = this.films.filter(f => f !== film);
   }
 
-  // ocClickCreateFilm(): void {
-  //   this.films.push(this.filmToCreate);
-  //   this.filmToCreate = new Film();
-  // }
-
-  // onChangePosterInput(poster: string): void {
-  //   this.posterPreview = poster;
+  onClickCreateFilm(filmToCreate : Film): void {
+    this.films.push(filmToCreate);
   }
+
+}
 
 
